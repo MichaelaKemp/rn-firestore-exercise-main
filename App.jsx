@@ -6,13 +6,14 @@ import ListScreen from './screens/ListScreen';
 import DetailsScreen from './screens/DetailsScreen';
 import CreateScreen from './screens/CreateScreen';
 
-
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Home'>
+      <StatusBar style="auto" />
+
+      <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={ListScreen} />
         <Stack.Screen name="Details" component={DetailsScreen} />
         <Stack.Screen name="Add" component={CreateScreen} />
@@ -20,4 +21,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
