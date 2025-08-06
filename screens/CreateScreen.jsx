@@ -13,7 +13,7 @@ const CreateScreen = ({navigation}) => {
     const handleCreation = async () => {
         //Need to pass all our data to the function
 
-        //TODO: make sure all values have been entered - show error/disable button
+        //TODO: make sure all values have been entered - show error/disable buttons
         var items = {
             title,
             priority,
